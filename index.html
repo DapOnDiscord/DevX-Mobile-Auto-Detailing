@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevX | Mobile Auto Detailing</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+body {
+font-family: 'Inter', system-ui, sans-serif;
+}
+.hero-bg {
+background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://picsum.photos/id/1015/2000/1200') center/cover;
+}
+.service-card {
+transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.service-card:hover {
+transform: translateY(-12px);
+box-shadow: 0 25px 50px -12px rgb(185 28 28);
+}
+.price-generator {
+background: #111;
+border: 2px solid #b91c1c;
+}
+</style>
+</head>
+<body class="bg-black text-white">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-red-900">
+<div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="text-4xl font-bold tracking-tighter">
+<span class="text-white">Dev</span><span class="text-red-600">X</span>
+</span>
+<span class="text-xs tracking-[3px] text-gray-400 font-medium">MOBILE DETAILING</span>
+</div>
+<div class="hidden md:flex gap-8 text-sm font-medium">
+<a href="#services" class="hover:text-red-500 transition">Services</a>
+<a href="#pricing" class="hover:text-red-500 transition">Pricing</a>
+<a href="#gallery" class="hover:text-red-500 transition">Gallery</a>
+<a href="#about" class="hover:text-red-500 transition">About</a>
+</div>
+<a href="#contact" class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-full font-semibold transition">Book Now</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-bg min-h-screen flex items-center relative">
+<div class="max-w-7xl mx-auto px-6 pt-32">
+<div class="max-w-2xl">
+<h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
+PREMIUM<br>MOBILE<br>DETAILING
+</h1>
+<p class="text-2xl text-gray-300 mb-8">Expert car care that comes to you.<br>Silver. Red. Obsessed with perfection.</p>
+
+<div class="flex flex-wrap gap-4">
+<a href="#pricing" class="bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition">Get Your Detail</a>
+<a href="#pricing" class="border border-red-600 text-red-500 hover:bg-red-600 hover:text-white px-10 py-4 rounded-full font-bold text-lg transition">See Pricing</a>
+</div>
+
+<div class="mt-12 inline-flex items-center gap-3 bg-black/70 backdrop-blur px-6 py-3 rounded-2xl border border-red-900">
+<span class="text-red-500 text-2xl">🎉</span>
+<div>
+<span class="font-semibold">First Time Customers:</span>
+<span class="text-red-500 font-bold">20% OFF</span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Floating 3D scene placeholder -->
+<div class="absolute bottom-12 right-12 hidden lg:block">
+<div class="bg-gray-900 border border-red-800 rounded-3xl p-4 w-80 shadow-2xl">
+<div class="aspect-video bg-gradient-to-br from-red-900 to-black rounded-2xl flex items-center justify-center overflow-hidden">
+<div class="text-center">
+<p class="text-red-500 text-sm mb-2">LIVE 3D DETAILING SCENE</p>
+<p class="text-xs text-gray-400">Premium polish + ceramic application</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-24 bg-zinc-950">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-5xl font-bold mb-4">Our Services</h2>
+<p class="text-gray-400 text-xl">From quick refreshes to full showroom transformations</p>
+</div>
+
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="service-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
+<div class="h-56 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center relative">
+<div class="text-center">
+<p class="text-6xl mb-2">🧼</p>
+<p class="text-red-500 font-medium">3D INTERIOR DETAIL</p>
+</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-semibold mb-3">Interior Detail</h3>
+<p class="text-gray-400 mb-6">Deep vacuum, air compressor blow-out, leather conditioning, glass, and more.</p>
+<ul class="text-sm text-gray-400 space-y-2">
+<li class="flex items-center gap-2"><i class="fas fa-check text-red-500"></i> Full vacuum & air blast</li>
+<li class="flex items-center gap-2"><i class="fas fa-check text-red-500"></i> Interior wipe-down</li>
+<li class="flex items-center gap-2"><i class="fas fa-check text-red-500"></i> Odor elimination</li>
+</ul>
+</div>
+</div>
+
+<!-- Service 2 -->
+<div class="service-card bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
+<div class="h-56 bg-gradient-to-br from-red-950 to-black flex items-center justify-center relative">
+<div class="text-center">
+<p class="text-6xl mb-2">✨</p>
+<p class="text-red-500 font-medium">EXTERIOR POLISH</p>
+</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-semibold mb-3">Exterior Polish & Protection</h3>
+<p class="text-gray-400 mb-6">Hand wash, clay bar, multi-stage polish, and sealant.</p>
+</div>
+</div>
+
+<!-- Service 3 -->
+<div class="service-card bg-zinc-900 rounded-3xl overflow-hidden border border-red-800 ring-2 ring-red-600">
+<div class="h-56 bg-gradient-to-br from-amber-900 to-black flex items-center justify-center relative">
+<div class="text-center">
+<p class="text-6xl mb-2">🛡️</p>
+<p class="text-red-500 font-medium">CERAMIC COATING</p>
+<p class="text-xs text-amber-400">PREMIUM ADD-ON • COMING SOON</p>
+</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-semibold mb-3">Ceramic Coating</h3>
+<p class="text-gray-400">Long-lasting hydrophobic protection. 2-5 year durability.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PRICE GENERATOR -->
+<section id="pricing" class="py-24 bg-black border-t border-b border-red-900">
+<div class="max-w-5xl mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-5xl font-bold mb-4">Instant Price Generator</h2>
+<p class="text-gray-400">Customize your detail and see the price live</p>
+</div>
+
+<div class="price-generator max-w-2xl mx-auto p-10 rounded-3xl">
+<div class="space-y-8">
+<div>
+<label class="block text-sm text-gray-400 mb-2">Vehicle Size</label>
+<select id="vehicle" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl p-4 text-lg">
+<option value="150">Sedan / Compact ($150 base)</option>
+<option value="180">SUV / Crossover ($180 base)</option>
+<option value="220">Truck / Large SUV ($220 base)</option>
+</select>
+</div>
+
+<div class="grid grid-cols-2 gap-6">
+<div>
+<label class="flex items-center gap-3 cursor-pointer">
+<input type="checkbox" id="interior" checked class="w-5 h-5 accent-red-600">
+<span>Full Interior Detail</span>
+</label>
+</div>
+<div>
+<label class="flex items-center gap-3 cursor-pointer">
+<input type="checkbox" id="exterior" checked class="w-5 h-5 accent-red-600">
+<span>Exterior Wash + Polish</span>
+</label>
+</div>
+<div>
+<label class="flex items-center gap-3 cursor-pointer">
+<input type="checkbox" id="ceramic" class="w-5 h-5 accent-red-600">
+<span>Ceramic Coating (Add-on)</span>
+</label>
+</div>
+<div>
+<label class="flex items-center gap-3 cursor-pointer">
+<input type="checkbox" id="polish" class="w-5 h-5 accent-red-600">
+<span>Paint Correction</span>
+</label>
+</div>
+</div>
+
+<div class="pt-8 border-t border-zinc-700">
+<div class="flex justify-between text-4xl font-bold">
+<span>Total:</span>
+<span id="total" class="text-red-500">$<span id="price">328</span></span>
+</div>
+<p class="text-green-400 text-sm mt-2">✓ First Time: 20% OFF applied</p>
+</div>
+
+<button onclick="alert('Booking request sent! We will contact you shortly at devx@gmail.com')"
+class="w-full bg-red-600 hover:bg-red-700 py-6 rounded-2xl font-bold text-xl transition">
+Book This Detail Now
+</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- GALLERY / 3D SCENES -->
+<section id="gallery" class="py-24 bg-zinc-950">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-5xl font-bold text-center mb-16">Detailing in Action</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="aspect-video bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 flex items-center justify-center">
+<p class="text-center text-gray-400">AI 3D Video: <br><strong>Vacuum + Air Compressor Interior Clean</strong></p>
+</div>
+<div class="aspect-video bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 flex items-center justify-center">
+<p class="text-center text-gray-400">AI 3D Video: <br><strong>Multi-Stage Polishing</strong></p>
+</div>
+<div class="aspect-video bg-zinc-900 rounded-3xl overflow-hidden border border-red-700 flex items-center justify-center">
+<p class="text-center text-gray-400">AI 3D Scene: <br><strong>Ceramic Coating Application</strong><br><span class="text-red-500">Premium</span></p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 bg-black">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<h2 class="text-5xl font-bold mb-8">Ready for Showroom Shine?</h2>
+<p class="text-2xl text-gray-300 mb-12">Mobile service in Cherry Hill, NJ & surrounding areas</p>
+
+<div class="bg-zinc-900 rounded-3xl p-12">
+<p class="text-3xl font-medium mb-8">Email us at <a href="mailto:devx@gmail.com" class="text-red-500 hover:underline">devx@gmail.com</a></p>
+
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<a href="tel:6095551234" class="bg-zinc-800 hover:bg-zinc-700 px-10 py-6 rounded-2xl text-lg font-medium">Call (609) 555-1234</a>
+<button onclick="alert('Thank you! We will reply to devx@gmail.com shortly.')"
+class="bg-red-600 hover:bg-red-700 px-10 py-6 rounded-2xl text-lg font-medium">Send Message</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-zinc-950 py-12 border-t border-zinc-800">
+<div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+<p>© 2026 DevX Mobile Auto Detailing • Cherry Hill, New Jersey</p>
+<p class="mt-2">Premium detailing with passion • First service 20% off</p>
+</div>
+</footer>
+
+<script>
+// Simple price calculator
+function calculatePrice() {
+let base = parseInt(document.getElementById('vehicle').value);
+let total = base;
+
+if (document.getElementById('interior').checked) total += 80;
+if (document.getElementById('exterior').checked) total += 100;
+if (document.getElementById('ceramic').checked) total += 250;
+if (document.getElementById('polish').checked) total += 180;
+
+// Apply 20% first-time discount
+total = Math.round(total * 0.8);
+
+document.getElementById('price').textContent = total;
+}
+
+// Add event listeners
+document.querySelectorAll('#pricing input, #pricing select').forEach(el => {
+el.addEventListener('change', calculatePrice);
+});
+
+// Initial calculation
+window.onload = calculatePrice;
+</script>
+</body>
+</html>
